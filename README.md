@@ -1,0 +1,2 @@
+# myProject.github.io
+Diplom
