@@ -50,3 +50,21 @@ a{
     cursor: pointer;
 
 }
+@media only screen and (max-width: 768px){
+    .title{
+        font-size: 20px;
+    }
+    .li-test p{
+        font-size: 15px;
+        list-style-type: none;
+    }
+    .li-test{
+        list-style-type: none;
+    }
+    .choice{
+        font-size: 14px;
+    }
+    .test{
+        margin-bottom: 20px;
+    }
+}
