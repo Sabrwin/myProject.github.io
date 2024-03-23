@@ -1,0 +1,55 @@
+
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+}
+body{
+    margin: 0;
+    background: #4a444a;
+    background-image:url(Dumka2.png);
+    
+}
+.main p{
+    padding-left: 30px;
+    font-size: 25px;
+    color:#ffff;
+    
+}
+.title-one{
+    font-weight: 600;
+    color:#ffff;
+}
+
+.title-des p{
+    font-size: 30px;
+}
+.title-des span{
+    color:#ff8a00;
+}
+.title-one span{
+    color:black;
+    padding: 10px;
+    border-radius:50%;
+    background: #ffff;
+}
+.button{
+    text-align: center;
+    margin-top: 90px;
+    
+}
+.button a{
+    background:#00ff75;
+    color:#ffff;
+    font-size: 30px;
+    padding: 20px;
+    border-radius:50px;
+    text-decoration: none;
+    
+    
+}
+.btn:hover{
+   background:#439e6d;
+   transition: background 0.3s linear;
+   
+}

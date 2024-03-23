@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Опрос о программировании</title>
+  <!-- Ваши стили или внешние стили могут быть добавлены здесь -->
+  <link rel="stylesheet" href="developer.css">
+</head>
+<body>
+
+  
+  <form id="quizForm" action="обработчик.php" method="post">
+    <div class="container">
+    <ol class="test">
+      
+      <li>
+        <p class="title"> Что вы хотите разрабатывать?</p>
+        <label class="choice" ><input type="radio" name="question2" value="a"> мобильные приложения для android</label><br>
+        <label class="choice" ><input type="radio" name="question2" value="b"> мобильные приложения для ios</label><br>
+        <label class="choice" ><input type="radio" name="question2" value="c"> мобильные Игры</label><br>
+        <label class="choice" ><input type="radio" name="question2" value="d"> Компьютерные игры</label>
+        
+      </li>
+        <input class="button" type="submit" value="Отправить">
+    </ol>
+    
+  </div>
+  </form>
+
+  <script src="Dev.js"></script>
+</body>
+</html>

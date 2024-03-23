@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Добавляем это свойство для корректного учета полей и границ элементов */
+}
+
+body {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(img/vrfon.png) center/cover; /* Используем сокращенную запись для фонового изображения */
+}
+.title{
+    text-align: center;
+    color: red;
+    margin-bottom: 40px;
+}
+.title span{
+    color:orange;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет карточкам переноситься на новую строку, если места не хватает */
+    justify-content: center;
+    gap: 20px; /* Добавляем отступы между карточками */
+}
+
+.card {
+    width: calc(33.33% - 40px); /* Распределяем карточки по 3 в ряду с отступами по 20px */
+    margin: 20px;
+    max-width: 300px; /* Ограничиваем максимальную ширину карточки */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px black;
+    transition: transform 0.3s ease; /* Добавляем плавное изменение при наведении */
+}
+
+.card:hover {
+    transform: scale(1.1); /* Увеличиваем карточку при наведении */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0; /* Закругляем верхние углы изображения */
+}
+
+.intro {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(27, 27, 27, 0.8);
+    color: white;
+    padding: 10px;
+    transition: height 0.3s, bottom 0.3s, background-color 0.3s; /* Добавляем плавные переходы */
+}
+.button-back{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    padding: 5px;
+    background:white;
+    border-radius:7px;
+    margin-left: 20px;
+    
+    
+}
+
+.intro h1, .intro p {
+    margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        width: calc(50% - 40px); /* Распределяем карточки по 2 в ряду на устройствах с шириной до 768px */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .card {
+        width: calc(100% - 40px); /* Распределяем карточки на всю ширину на устройствах с шириной до 480px */
+    }
+}

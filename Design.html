@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Опрос о программировании</title>
+  <!-- Ваши стили или внешние стили могут быть добавлены здесь -->
+  <link rel="stylesheet" href="Design.css">
+</head>
+<body>
+
+  
+  <form id="quizForm" action="обработчик.php" method="post">
+    <div class="container">
+    <ol class="test">
+      
+      <li>
+        <p class="title"> Что вам интересно ?</p>
+        <p class="title">Направлений Дизайна очень много это лишь основная часть</p>
+        <label class="choice" ><input type="radio" name="question2" value="a"> Визуальный Дизайн</label><br>
+        <label class="choice" ><input type="radio" name="question2" value="b"> Общение с пользователем и создание удобного интерфейса.</label><br>
+        <label class="choice" ><input type="radio" name="question2" value="c"> Дизайн и создание Логотипа или буклеты ,визитки.</label>
+        
+      </li>
+        <input class="button" type="submit" value="Отправить">
+    </ol>
+    
+  </div>
+  </form>
+
+  <script src="Analitic.js"></script>
+</body>
+</html>

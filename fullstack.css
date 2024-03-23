@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    height: 500px;
+    width: 350px;
+    border-radius: 3px;
+}
+h4{
+  font-size: 23px;
+}
+.title{
+    text-align: center;
+    color:#ffff;
+}
+.title span{
+    color:orange;
+}
+.button-back{
+    text-align: center;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    
+}
+.button-back a:hover{
+    background:greenyellow;
+}
+a{
+    padding:15px;
+    border-radius:9px;
+    background:#ffff;
+    font-size: 23px;
+    margin: 15px;
+    text-decoration: none;
+    color:black;
+}
+
+.intro{
+   height: 70px;
+   width: 350px; 
+   padding: 6px;
+   box-sizing: border-box;
+   position: absolute;
+   bottom: 84px;
+   background: rgb(27, 27, 27, .5);
+   color: white;
+   transition: .5s;
+}
+
+
+body {
+    background: url(fon.jpg); /* Установка фонового изображения */
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-size: cover; /* Растягивание фонового изображения на весь экран */
+    background-position: center; /* Центрирование фонового изображения */
+    align-items: center;
+    background-color: whitesmoke; /* Фоновый цвет, который будет использоваться, если изображение не загрузится */
+}
+
+.card{
+    height: 500px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+}
+h1{
+    margin: 10px;
+    font-size: 40px;
+    
+}
+p{
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+span{
+    font-weight: bold;
+}
+.card:hover{
+    cursor: pointer;
+}
+.card:hover .intro{
+   height: 220px;
+   bottom: 80px;
+   background:black;
+}
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.card:hover img{
+    transform: scale(1.1) rotate(-3deg);
+}
