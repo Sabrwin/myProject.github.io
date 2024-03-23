@@ -53,3 +53,19 @@ body{
    transition: background 0.3s linear;
    
 }
+@media only screen and (max-width: 768px) {
+    .main p {
+        font-size: 15px; /* Уменьшаем размер шрифта для элементов с классом .main p */
+    }
+
+    .title-one {
+        font-size: 20px; /* Уменьшаем размер шрифта для элементов с классом .title-one */
+    }
+
+    .title-des p {
+        font-size: 15px; /* Уменьшаем размер шрифта для элементов с классом .title-des p */
+    }
+    .btn{
+        margin-bottom: 20px;
+    }
+}
