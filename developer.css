@@ -37,3 +37,22 @@ body{
     justify-content: center;
     margin-top: 200px;
 }
+ol{
+    list-style-type: none;
+}
+@media only screen and (max-width: 768px){
+    .title{
+        font-size: 20px;
+    }
+    .test p{
+        font-size: 15px;
+        list-style-type: none;
+    }
+    
+    .choice{
+        font-size: 14px;
+    }
+    .test{
+        margin-bottom: 20px;
+    }
+}

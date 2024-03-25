@@ -14,11 +14,14 @@ a{
     border:1px;
     border-radius:9px;
     background:#ffff;
-    font-size: 18px;
+    font-size: 13px;
     margin: 15px;
     text-decoration: none;
     color:black;
     transition: background-color 0.3s ease;
+}
+ol{
+    list-style: none;
 }
 a:hover{
     background-color: greenyellow;
@@ -52,4 +55,20 @@ a:hover{
     display: flex;
     justify-content: center;
     margin-top: 200px;
+}
+@media only screen and (max-width: 768px){
+    .title{
+        font-size: 20px;
+    }
+    .test p{
+        font-size: 15px;
+        list-style-type: none;
+    }
+    
+    .choice{
+        font-size: 14px;
+    }
+    .test{
+        margin-bottom: 20px;
+    }
 }
