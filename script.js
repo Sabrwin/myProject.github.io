@@ -24,6 +24,12 @@ document.addEventListener("DOMContentLoaded", function() {
       case 'd':
           redirectUrl = "VR.html";
         break;
+      case 'e':
+          redirectUrl = "marketing.html";
+        break;
+      case 'j':
+          redirectUrl = "Data.html";
+        break;
       default:
         redirectUrl = "страница_по_умолчанию.html";
     }
