@@ -1,0 +1,60 @@
+body{
+    background:url(img/маркетинг.jpg);
+}
+.test{
+    background: #ffff;
+    padding-bottom: 25px;
+    padding-right: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+
+}
+.title{
+    font-size: 40px;
+}
+.choice{
+    font-size: 18px;
+}
+.test p{
+    font-size: 25px;
+}
+.button{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius:7px;
+    transition: background-color 0.3s ease;
+}
+.button:hover{
+    background-color: greenyellow;
+    cursor: pointer;
+
+}
+.choice input{
+    margin-bottom: 20px;
+    
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+ol{
+    list-style: none;
+}
+@media only screen and (max-width: 768px){
+    .title{
+        font-size: 20px;
+    }
+    .test p{
+        font-size: 15px;
+        list-style-type: none;
+    }
+    
+    .choice{
+        font-size: 14px;
+    }
+    .test{
+        margin-bottom: 20px;
+    }
+}

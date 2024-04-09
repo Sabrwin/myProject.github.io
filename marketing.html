@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Ваши стили или внешние стили могут быть добавлены здесь -->
+  <link rel="stylesheet" href="marketing.css">
+</head>
+<body>
+
+  
+  <form id="quizForm" action="обработчик.php" method="post">
+    <div class="container">
+    <ol class="test">
+      
+      <li>
+        <p class="title"> Ты выбрал маркетинг, есть много что связано с маркетингом выбери что тебе ближе?</p>
+        <label class="choice" ><input type="radio" name="question2" value="a"> Копирайтер</label><br>
+        <label class="choice" ><input type="radio" name="question2" value="b"> SEO - оптимизатор</label><br>
+        <label class="choice" ><input type="radio" name="question2" value="c"> Таргетолог</label><br>
+        <label class="choice" ><input type="radio" name="question2" value="d"> Интернет маркетолог</label>
+        
+      </li>
+        <input class="button" type="submit" value="Отправить">
+    </ol>
+    
+  </div>
+  </form>
+
+  <script src="marketing.js"></script>
+</body>
+</html>
