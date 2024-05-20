@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Лекция: C# и C++ в игровой разработке</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+.question {
+    margin-bottom: 20px;
+}
+
+.answers {
+    margin-left: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Лекция: C# и C++ в игровой разработке</h1>
+    
+    <div class="lecture">
+        <h2>Язык программирования C#</h2>
+        <p>C# - современный объектно-ориентированный язык программирования, разработанный компанией Microsoft. Он широко используется в игровой разработке, особенно при создании игр на платформе Unity.</p>
+        
+        <h2>Особенности C#:</h2>
+        <ul>
+            <li><strong>Объектно-ориентированный:</strong> C# поддерживает принципы ООП, такие как наследование, инкапсуляция и полиморфизм.</li>
+            <li><strong>Управляемый код:</strong> Код на C# компилируется в промежуточный язык (CIL), который исполняется виртуальной машиной Common Language Runtime (CLR).</li>
+            <li><strong>Богатая стандартная библиотека:</strong> C# поставляется с обширной стандартной библиотекой, включающей в себя множество полезных классов и методов.</li>
+        </ul>
+        
+        <h2>Язык программирования C++</h2>
+        <p>C++ - мощный и эффективный язык программирования, широко используемый в игровой индустрии благодаря своей производительности и возможностям низкоуровневого управления ресурсами.</p>
+        
+        <h2>Особенности C++:</h2>
+        <ul>
+            <li><strong>Высокая производительность:</strong> C++ обеспечивает близкое к металлу управление памятью и высокую скорость выполнения.</li>
+            <li><strong>Низкоуровневое программирование:</strong> C++ позволяет программисту полностью контролировать использование памяти и процессора.</li>
+            <li><strong>Мультипарадигменный:</strong> C++ поддерживает как процедурное, так и объектно-ориентированное программирование.</li>
+        </ul>
+        
+        <h2>Игровые движки Unity и Godot</h2>
+        <p>Unity и Godot - это два популярных игровых движка, которые позволяют разработчикам создавать высококачественные игры для различных платформ.</p>
+        
+        <h3>Unity</h3>
+        <p>Unity - это мощный и гибкий игровой движок с широким набором функций и инструментов для создания игр 2D и 3D. Он поддерживает множество платформ, включая iOS, Android, Windows, macOS и многие другие.</p>
+        
+        <h3>Godot</h3>
+    
+    <p>Godot - это бесплатный и открытый исходный код игровой движок, который предоставляет удобный в использовании интерфейс и множество инструментов для разработки игр различных жанров.</p>
+    
+    <p>
+        C# <br><br>
+Практические задания по C#/C++ <br><br>
+Приветствие
+Напишите программу на C#, которая запрашивает у пользователя его имя и выводит на экран сообщение "Привет, [имя]!". <br><br>
+
+Расчет площади прямоугольника<br>
+Напишите программу, которая запрашивает у пользователя длину и ширину прямоугольника, а затем выводит его площадь.<br><br>
+
+Определение четности числа<br>
+Напишите программу, которая запрашивает у пользователя число и выводит сообщение "Число четное" или "Число нечетное", в зависимости от того, четное оно или нет.<br><br>
+
+C++<br><br>
+
+Приветствие
+Напишите программу на C++, которая запрашивает у пользователя его имя и выводит на экран сообщение "Привет, [имя]!".<br><br>
+
+Расчет площади прямоугольника
+Напишите программу, которая запрашивает у пользователя длину и ширину прямоугольника, а затем выводит его площадь.<br><br>
+
+Определение четности числа
+Напишите программу, которая запрашивает у пользователя число и выводит сообщение "Число четное" или "Число нечетное", в зависимости от того, четное оно или нет.<br><br>
+Вот примеры решений этих заданий на C# и C++: <br><br>
+<pre>
+    <code>
+        using System;
+
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                // 1. Приветствие
+                Console.Write("Введите ваше имя: ");
+                string name = Console.ReadLine();
+                Console.WriteLine($"Привет, {name}!");
+        
+                // 2. Расчет площади прямоугольника
+                Console.Write("Введите длину прямоугольника: ");
+                double length = double.Parse(Console.ReadLine());
+                Console.Write("Введите ширину прямоугольника: ");
+                double width = double.Parse(Console.ReadLine());
+                double area = length * width;
+                Console.WriteLine($"Площадь прямоугольника: {area}");
+        
+                // 3. Определение четности числа
+                Console.Write("Введите число: ");
+                int number = int.Parse(Console.ReadLine());
+                if (number % 2 == 0)
+                    Console.WriteLine("Число четное");
+                else
+                    Console.WriteLine("Число нечетное");
+            }
+        }
+     
+        
+</code>
+</pre>  
+ <pre>
+    <code>
+        #include <iostream>
+            using namespace std;
+            
+            int main() {
+                // 1. Приветствие
+                string name;
+                cout << "Введите ваше имя: ";
+                cin >> name;
+                cout << "Привет, " << name << "!" << endl;
+            
+                // 2. Расчет площади прямоугольника
+                double length, width;
+                cout << "Введите длину прямоугольника: ";
+                cin >> length;
+                cout << "Введите ширину прямоугольника: ";
+                cin >> width;
+                double area = length * width;
+                cout << "Площадь прямоугольника: " << area << endl;
+            
+                // 3. Определение четности числа
+                int number;
+                cout << "Введите число: ";
+                cin >> number;
+                if (number % 2 == 0)
+                    cout << "Число четное" << endl;
+                else
+                    cout << "Число нечетное" << endl;
+            
+                return 0;
+            }
+            
+    </code>
+ </pre>  
+</p>
+</div>
+</div>
+<div class="container">
+    <h1>Тест: C#/C++ и игровые движки</h1>
+    
+    <div class="question" id="question1">
+        <h2>1. Что такое C#?</h2>
+        <div class="answers">
+            <label><input type="radio" name="q1" value="a"> a) Язык программирования</label><br>
+            <label><input type="radio" name="q1" value="b"> b) Игровой движок</label><br>
+            <label><input type="radio" name="q1" value="c"> c) Интегрированная среда разработки</label><br>
+        </div>
+    </div>
+    
+    <div class="question" id="question2">
+        <h2>2. Что такое Unity?</h2>
+        <div class="answers">
+            <label><input type="radio" name="q2" value="a"> a) Язык программирования</label><br>
+            <label><input type="radio" name="q2" value="b"> b) Графический редактор</label><br>
+            <label><input type="radio" name="q2" value="c"> c) Игровой движок</label><br>
+        </div>
+    </div>
+    
+    <div class="question" id="question3">
+        <h2>3. Как объявить переменную в C#?</h2>
+        <div class="answers">
+            <label><input type="radio" name="q3" value="a"> a) var variableName;</label><br>
+            <label><input type="radio" name="q3" value="b"> b) int variableName;</label><br>
+            <label><input type="radio" name="q3" value="c"> c) string variableName;</label><br>
+        </div>
+    </div>
+    
+    <div class="question" id="question4">
+        <h2>4. Что означает OOP?</h2>
+        <div class="answers">
+            <label><input type="radio" name="q4" value="a"> a) Object-Oriented Programming</label><br>
+            <label><input type="radio" name="q4" value="b"> b) Object-Oriented Protocol</label><br>
+            <label><input type="radio" name="q4" value="c"> c) Object-Oriented Process</label><br>
+        </div>
+    </div>
+    
+    <div class="question" id="question5">
+        <h2>5. Что такое C++?</h2>
+        <div class="answers">
+            <label><input type="radio" name="q5" value="a"> a) Язык программирования</label><br>
+            <label><input type="radio" name="q5" value="b"> b) Игровой движок</label><br>
+            <label><input type="radio" name="q5" value="c"> c) Фреймворк</label><br>
+        </div>
+    </div>
+    
+    <div class="question" id="question6">
+        <h2>6. Что такое Godot?</h2>
+        <div class="answers">
+            <label><input type="radio" name="q6" value="a"> a) Язык программирования</label><br>
+            <label><input type="radio" name="q6" value="b"> b) Игровой движок</label><br>
+            <label><input type="radio" name="q6" value="c"> c) Фреймворк</label><br>
+        </div>
+    </div>
+    
+    <div class="question" id="question7">
+        <h2>7. Как объявить функцию в C++?</h2>
+        <div class="answers">
+            <label><input type="radio" name="q7" value="a"> a) def functionName()</label><br>
+            <label><input type="radio" name="q7" value="b"> b) void functionName()</label><br>
+            <label><input type="radio" name="q7" value="c"> c) function functionName()</label><br>
+        </div>
+    </div>
+    
+    <div class="question" id="question8">
+        <h2>8. Какой символ используется для комментариев в C#?</h2>
+        <div class="answers">
+            <label><input type="radio" name="q8" value="a"> a) //</label><br>
+            <label><input type="radio" name="q8" value="b"> b) /* */</label><br>
+            <label><input type="radio" name="q8" value="c"> c) #</label><br>
+        </div>
+    </div>
+    
+    <div class="question" id="question9">
+        <h2>9. В каком языке программирования пишут скрипты для Unity?</h2>
+        <div class="answers">
+            <label><input type="radio" name="q9" value="a"> a) JavaScript</label><br>
+            <label><input type="radio" name="q9" value="b"> b) C#</label><br>
+            <label><input type="radio" name="q9" value="c"> c) Python</label><br>
+        </div>
+    </div>
+    
+    <div class="question" id="question10">
+        <h2>10. Какой язык программирования используется для разработки в Godot?</h2>
+        <div class="answers">
+            <label><input type="radio" name="q10" value="a"> a) C#</label><br>
+            <label><input type="radio" name="q10" value="b"> b) C++</label><br>
+            <label><input type="radio" name="q10" value="c"> c) GDScript</label><br>
+        </div>
+    </div>
+
+    <button onclick="showResult()">Проверить</button>
+    <div id="result"></div>
+</div>
+
+<script>
+function showResult() {
+    var score = 0;
+
+    // Проверяем ответы на каждый вопрос
+    var q1Answer = document.querySelector('input[name="q1"]:checked');
+    if (q1Answer && q1Answer.value === "a") {
+        score++;
+    }
+
+    var q2Answer = document.querySelector('input[name="q2"]:checked');
+    if (q2Answer && q2Answer.value === "c") {
+        score++;
+    }
+
+    var q3Answer = document.querySelector('input[name="q3"]:checked');
+    if (q3Answer && q3Answer.value === "a") {
+        score++;
+    }
+
+    var q4Answer = document.querySelector('input[name="q4"]:checked');
+    if (q4Answer && q4Answer.value === "a") {
+        score++;
+    }
+
+    var q5Answer = document.querySelector('input[name="q5"]:checked');
+    if (q5Answer && q5Answer.value === "a") {
+        score++;
+    }
+
+    var q6Answer = document.querySelector('input[name="q6"]:checked');
+    if (q6Answer && q6Answer.value === "b") {
+        score++;
+    }
+
+    var q7Answer = document.querySelector('input[name="q7"]:checked');
+    if (q7Answer && q7Answer.value === "b") {
+        score++;
+    }
+
+    var q8Answer = document.querySelector('input[name="q8"]:checked');
+    if (q8Answer && q8Answer.value === "a") {
+        score++;
+    }
+
+    var q9Answer = document.querySelector('input[name="q9"]:checked');
+    if (q9Answer && q9Answer.value === "b") {
+        score++;
+    }
+
+    var q10Answer = document.querySelector('input[name="q10"]:checked');
+    if (q10Answer && q10Answer.value === "c") {
+        score++;
+    }
+
+    // Выводим результат
+    var resultElement = document.getElementById('result');
+    resultElement.textContent = 'Вы набрали ' + score + ' из 10 баллов.';
+}
+</script>
+</body>
+</html>

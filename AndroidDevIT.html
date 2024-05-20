@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Лекция: Java, Android Studio, Kotlin и Основы программирования</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+.lecture {
+    margin-bottom: 30px;
+}
+
+.lecture h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.lecture p {
+    margin-bottom: 15px;
+}
+.question {
+    margin-bottom: 20px;
+}
+
+.answers {
+    margin-left: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="lecture">
+        <h1>Лекция: Java, Android Studio, Kotlin и Основы программирования</h1>
+        
+        <h2>Java</h2>
+        <p>Java - это объектно-ориентированный язык программирования, разработанный компанией Sun Microsystems (позднее приобретенной компанией Oracle). Он широко используется для создания различных типов приложений, включая веб-приложения, мобильные приложения и корпоративные приложения.</p>
+        
+        <h2>Android Studio</h2>
+        <p>Android Studio - это официальная интегрированная среда разработки (IDE) от Google для создания приложений под операционную систему Android. Она предоставляет разработчикам все необходимые инструменты для проектирования, разработки, отладки и развертывания мобильных приложений для Android.</p>
+        
+        <h2>Kotlin</h2>
+        <p>Kotlin - это современный язык программирования, разработанный компанией JetBrains. Он полностью совместим с Java и может использоваться вместе с ней в проектах Android. Kotlin предлагает множество новых функций и улучшений по сравнению с Java, делая разработку более продуктивной и приятной.</p>
+        
+        <h2>Основы программирования</h2>
+        <p>Программирование - это процесс создания инструкций для компьютера с целью решения определенной задачи. Основы программирования включают в себя изучение базовых концепций, таких как переменные, условные операторы, циклы и функции, а также умение применять эти концепции для решения задач.</p>
+        
+        <p>Основные концепции программирования включают в себя:</p>
+        <ul>
+            <li>Переменные и типы данных</li>
+            <li>Условные операторы (if-else)</li>
+            <li>Циклы (for, while)</li>
+            <li>Функции и процедуры</li>
+            <li>Структуры данных (массивы, списки)</li>
+        </ul>
+        
+        <p>Понимание этих основных концепций является ключевым для развития навыков программирования и создания сложных программных решений.</p>
+        <p>Вот так пишется первая программа Привет Мир:</p>
+        <p><pre>
+            <code>
+            public class HelloWorld {
+            public static void main(String[] args) {
+                System.out.println("Hello, World!");
+            }
+        }
+    </code>
+    </pre>
+    </p>
+
+    <p>Целочисленные типы данных (Integer Types): 
+        <ul>
+            <li>byte: 8-битное целое число. Диапазон значений от -128 до 127.</li>
+            <li>short: 16-битное целое число. Диапазон значений от -32,768 до 32,767.</li>
+            <li> int: 32-битное целое число. Диапазон значений от -2^31 до 2^31-1.</li>
+            <li>long: 64-битное целое число. Диапазон значений от -2^63 до 2^63-1.</li>
+        
+        </ul>
+        Примеры использования:
+        <pre>
+            <code>
+                byte myByte = 10;
+                short myShort = 1000;
+                int myInt = 100000;
+                long myLong = 1000000000L; // Обратите внимание на 'L' в конце для обозначения long
+
+            </code>
+        </pre>
+        </p>
+        <p>Числа с плавающей точкой (Floating-Point Types):
+            <ul>
+                <li>float: 32-битное число с плавающей точкой одинарной точности.</li>
+                <li>double: 64-битное число с плавающей точкой двойной точности.</li>
+            </p>
+        <p>Примеры использования:</p>
+        float myFloat = 3.14f; // Обратите внимание на 'f' в конце для обозначения float <br>
+       double myDouble = 3.14159; <br>
+       <p>Символьный тип данных (Character Type):
+        char: 16-битный символьный тип. Используется для хранения символов Unicode.
+        Пример использования: <br> <br>
+        char myChar = 'A'; <br>
+        Логический тип данных (Boolean Type): <br> 
+        boolean: Используется для хранения значения истинности (true или false).
+        Пример использования: <br><br>
+        boolean isJavaFun = true; <br> <br>
+        Ссылочные типы данных (Reference Types):
+        String: Строковый тип данных в Java. Не является примитивным типом данных, а является классом. Используется для хранения строковых значений.
+        Пример использования: <br> <br>
+        String myString = "Hello, World!";</p><br><br>
+        <p>В Kotlin все компоненты программы, в том числе переменные, представляют объекты, которые имеют определенный тип данных. Тип данных определяет, какой размер памяти может занимать объект данного типа и какие операции с ним можно производить. В Kotlin есть несколько базовых типов данных: числа, символы, строки, логический тип и массивы. <br><br>
+
+            Целочисленные типы<br><br>
+            Byte: хранит целое число от -128 до 127 и занимает 1 байт<br>
+            
+            Short: хранит целое число от -32 768 до 32 767 и занимает 2 байта<br>
+            
+            Int: хранит целое число от -2 147 483 648 (-231) до 2 147 483 647 (231 - 1) и занимает 4 байта<br>
+            
+            Long: хранит целое число от –9 223 372 036 854 775 808 (-263) до 9 223 372 036 854 775 807 (263-1) и занимает 8 байт<br>
+            
+            В последней версии Kotlin также добавлена поддержка для целочисленных типов без знака:<br><br>
+            
+            UByte: хранит целое число от 0 до 255 и занимает 1 байт<br>
+            
+            UShort: хранит целое число от 0 до 65 535 и занимает 2 байта<br>
+            
+            UInt: хранит целое число от 0 до 232 - 1 и занимает 4 байта<br>
+            
+            ULong: хранит целое число от 0 до 264-1 и занимает 8 байт<br>
+            
+            Объекты целочисленных типов хранят целые числа:<br><br>
+            
+            fun main(){<br>
+ 
+                val a: Byte = -10<br>
+                val b: Short = 45<br>
+                val c: Int = -250<br>
+                val d: Long = 30000<br>
+                println(a) // -10<br>
+                println(b) // 45<br>
+                println(c) // -250<br>
+                println(d) // 30000<br>
+            }<br><br>
+          
+            fun main(){<br><br>
+             
+                val a: Byte = -10<br>
+                val b: Short = 45<br>
+                val c: Int = -250<br>
+                val d: Long = 30000<br>
+                println(a) // -10<br>
+                println(b) // 45<br>
+                println(c) // -250<br>
+                println(d) // 30000<br>
+            }<br>
+            По умолчанию все числовые литералы расцениваются как значения типа Int. При присвоении числовых литералов переменным других типов данных происходит неявное преобразование. Например:<br><br>
+            
+           
+            fun main(){<br><br>
+             
+                val a: Byte = 127  // 127 - значение типа Int преобразуетсяв тип Byte<br>
+                println(a) // 127<br>
+            }<br>
+            Здесь числовой литерал, который по умолчанию представляет тип Int, преобразуется к типу Byte. И в данном случае все нормально, так как 127 укладывается в диапазон значений типа Byte. Но возьмем другой пример:<br><br>
+            
+           
+            fun main(){<br><br>
+             
+                val a: Byte = 128  // Ошибка<br>
+                println(a) // <br>
+            }<br>
+            Здесь при присвоении числа 128 переменной типа Byte мы получим ошибку, поскольку число 128 вне диапазона значений для типа Byte.<br>
+            
+            Kotlin также поддерживает литералы типа Long - такие числовые литералы имеют суффикс L:<br><br>
+            
+            
+            fun main(){<br><br>
+             
+                val a: Long = 22    // 22 - Int, преобразование из Int в Long<br>
+                println(a) // 22<br>
+                val b: Long = 22L   // 22L - Long, преобразование не нужно<br>
+                println(b) // 22<br>
+            }<br>
+            Для передачи значений объектам, которые представляют беззнаковые целочисленные типы данных, после числа указывается суффикс U:<br><br>
+            
+            
+            fun main(){<br><br>
+                
+                val a: UByte = 10U<br>
+                val b: UShort = 45U<br>
+                val c: UInt = 250U<br>
+                val d: ULong = 30000U<br>
+                println(a) // 10<br>
+                println(b) // 45<br>
+                println(c) // 250<br>
+                println(d) // 30000<br>
+            }<br>
+            Кроме чисел в десятичной системе мы можем определять числа в двоичной и шестнадцатеричной системах.<br>
+            
+            Шестнадцатеричная запись числа начинается с 0x, затем идет набор символов от 0 до F, которые представляют число:<br><br>
+            
+            
+            val num: Int = 0x0A1    // 161<br>
+            println(num) // 161<br>
+            Двоичная запись числа предваряется символами 0b, после которых идет последовательность из нулей и единиц:<br><br>
+            
+           
+            val a: Int = 0b0101    // 5<br>
+            val b: Int = 0b1011     // 11<br>
+            println(a)      // 5<br>
+            println(b)      // 11 <br>
+            Для упрощения работы с большими числами отдельные разряды чисел можно разделять с помощью прочерка:<br><br>
+          
+            fun main(){<br><br>
+             
+                var million = 1_000_000<br>
+                var number = 1234_5678_9012_3456<br>
+                println(million)    // 1000000<br>
+                println(number)     // 1234567890123456<br>
+            }<br>
+            Числа с плавающей точкой<br>
+            Кроме целочисленных типов в Kotlin есть два типа для чисел с плавающей точкой, которые позволяют хранить дробные числа:<br><br>
+            
+            Float: хранит число с плавающей точкой от -3.4*1038 до 3.4*1038 и занимает 4 байта<br>
+            
+            Double: хранит число с плавающей точкой от ±5.0*10-324 до ±1.7*10308 и занимает 8 байта.<br>
+            
+            В качестве разделителя целой и дробной части применяется точка:<br><br>
+            
+           
+            val height: Double = 1.78<br>
+            val pi: Float = 3.14F<br>
+            println(height)      // 1.78<br>
+            println(pi)         // 3.14<br>
+            Чтобы присвоить число объекту типа Float после числа указывается суффикс f или F.<br>
+            
+            Также тип Double поддерживает экспоненциальную запись:<br><br>
+           
+            val d: Double = 23e3<br>
+            println(d)      // 23 000<br>
+             
+            val g: Double = 23e-3<br>
+            println(g)      // 0.023<br>
+            Логический тип Boolean<br>
+            Тип Boolean может хранить одно из двух значений: true (истина) или false (ложь).<br>
+            
+            val a: Boolean = true<br>
+            val b: Boolean = false<br>
+            Символы<br>
+            Символьные данные представлены типом Char. Он представляет отдельный символ, который заключается в одинарные кавычки.<br><br>
+            
+           
+            val a: Char = 'A'<br>
+            val b: Char = 'B'<br>
+            val c: Char = 'T'<br>
+            Также тип Char может представлять специальные последовательности, которые интерпретируются особым образом:<br><br>
+            
+            \t: табуляция<br>
+            
+            \n: перевод строки<br>
+            
+            \r: возврат каретки<br>
+            
+            \': одинарная кавычка<br>
+            
+            \": двойная кавычка<br>
+            
+            \\: обратный слеш<br>
+            
+            Строки<br>
+            Строки представлены типом String. Строка представляет последовательность символов, заключенную в двойные кавычки, либо в тройные двойные кавычки.<br>
+            
+           
+            fun main() {<br><br>
+                 
+                val name: String = "Eugene"<br><br>
+             
+                println(name)<br>
+            }<br>
+            Строка может содержать специальные символы или эскейп-последовательности. Например, если необходимо вставить в текст перевод на другую строку, можно использовать эскейп-последовательность \n:<br>
+            
+            1<br>
+            val text: String = "SALT II was a series of talks between United States \n and Soviet negotiators from 1972 to 1979"<br>
+            Для большего удобства при создании многострочного текста можно использовать тройные двойные кавычки:<br><br>
+            
+          
+            fun main() {<br><br>
+             
+                val text: String = """<br>
+                                    SALT II was a series of talks between United States<br>
+                                    and Soviet negotiators from 1972 to 1979.<br>
+                                    It was a continuation of the SALT I talks.<br>
+                                """<br>
+                println(text)<br>
+            }<br>
+            Шаблоны строк<br>
+            Шаблоны строк (string templates) представляют удобный способ вставки в строку различных значений, в частности, значений переменных. Так, с помощью знака доллара $ мы можем вводить в строку значения различных переменных:<br><br>
+            
+           
+            fun main() {<br><br>
+             
+                val firstName = "Tom"<br>
+                val lastName = "Smith"<br>
+                val welcome = "Hello, $firstName $lastName"<br>
+                println(welcome)    // Hello, Tom Smith<br>
+            }<br>
+            В данном случае вместо $firstName и $lastName будут вставляться значения этих переменных. При этом переменные необязательно должны представлять строковый тип:<br><br>
+            
+        
+            val name = "Tom"<br>
+            val age = 22<br>
+            val userInfo = "Your name: $name  Your age: $age"<br>
+            Выведение типа<br>
+            Kotlin позволяет выводить тип переменной на основании данных, которыми переменная инициализируется. Поэтому при инициализации переменной тип можно опустить:<br><br>
+            
+            1<br>
+            val age = 5<br>
+            В данном случае компилятор увидит, что переменной присваивается значение типа Int, поэтому переменная age будет представлять тип Int.<br>
+            
+            Соответственно если мы присваиваем переменной строку, то такая переменная будет иметь тип String.<br><br>
+            
+            1<br>
+            val name = "Tom"<br>
+            Любые целые числа, воспринимаются как данные типа Int.<br>
+            
+            Если же мы хотим явно указать, что число представляет значение типа Long, то следует использовать суффикс L:<br><br>
+            
+            1<br>
+            val sum = 45L<br>
+            Если надо указать, что объект представляет беззнаковый тип, то применяется суффикс u или U:<br><br>
+            
+            1<br>
+            val sum = 45U<br>
+            Аналогично все числа с плавающей точкой (которые содержат точку в качестве разделителя целой и дробной части) рассматриваются как числа типа Double:<br><br>
+            
+            1<br>
+            val height = 1.78<br>
+            Если мы хотим указать, что данные будут представлять тип Float, то необходимо использовать суффикс f или F:<br><br>
+            
+            1<br>
+            val height = 1.78F<br>
+            Однако нельзя сначала объявить переменную без указания типа, а потом где-то в программе присвоить ей какое-то значение:<br><br>
+            
+            
+            val age     // Ошибка, переменная не инициализирована<br>
+            age = 5 <br>
+            Статическая типизация<br>
+            Тип данных ограничивает набор значений, которые мы можем присвоить переменной. Например, мы не можем присвоить переменной типа Double строку:
+            <pre>
+
+            <code>
+            1
+            val height: Double = "1.78"
+            И после того, как тип переменной установлен, он не может быть изменен:
+            
+            
+            fun main() {
+             
+                var height: String = "1.78"
+                height = 1.81       // !Ошибка - переменная height хранит только строки
+                println(height)
+            }
+            Кроме того, мы не можем переменной одного типа напрямую присвоить значение переменной другого типа. Например:
+            
+        
+            fun main(){
+             
+                var longN: Long = 2
+                var intN: Int = 4
+                longN = intN   // ! Ошибка
+                println(longN)
+            }
+            Здесь переменной типа Long мы пытаемся присвоить значение типа Int. В итоге мы получим ошибку. Казалось бы, значение переменной типа Int - число 4 вполне укладывается в диапазон значений типа Long. Более того саму переменную типа Long - nLong мы инициализируем значением типа Int. Тем не менее это разные типы, и мы получим ошибку.
+            
+            В реальности мы можем решить эту проблему: Kotlin предоставляет нам ряд встроенных функций для преобразования данных к определенному типу:
+            
+            toByte
+            
+            toShort
+            
+            toInt
+            
+            toLong
+            
+            toFloat
+            
+            toDouble
+            
+            toChar
+            
+            Так, мы можем изменить пример выше, применив функцию toLong:
+            
+            
+            fun main(){
+             
+                var longN: Long = 2
+                var intN: Int = 4
+                longN = intN.toLong()   // Ошибки нет
+                println(longN)
+            }
+            Далее мы более подробно разберем тему преобразований.
+            
+</code>
+            </pre>
+            Тип Any<br>
+            В Kotlin также есть тип Any, который позволяет присвоить переменной данного типа любое значение:<br><br>
+            
+            fun main() {<br><br>
+             
+                var name: Any = "Tom"<br>
+                println(name)   // Tom<br>
+                name = 6758<br>
+                println(name)   // 6758<br>
+            }</p>
+
+            <p>Практическое задание по языкам java и kotlin <br>
+                Java <br>
+                1. Задание: <br><br> Приветствие
+                
+                Напишите программу на Java, которая выводит на экран текст "Привет, мир!".<br>
+                
+                2. Задание:<br><br> Сложение двух чисел
+                
+                Напишите программу на Java, которая складывает два числа (например, 5 и 3) и выводит результат на экран.<br>
+                
+                3. Задание:<br><br> Проверка четности числа
+                
+                Напишите программу на Java, которая запрашивает у пользователя целое число и выводит сообщение "Число четное" или "Число нечетное", в зависимости от того, четное оно или нет.<br><br>
+                
+                Kotlin<br>
+                1. Задание:<br><br> Приветствие
+                
+                Напишите программу на Kotlin, которая выводит на экран текст "Привет, мир!".<br><br>
+                
+                2. Задание:<br><br> Вычитание двух чисел
+                
+                Напишите программу на Kotlin, которая вычитает одно число из другого (например, 10 из 7) и выводит результат на экран.<br><br>
+                
+                3. Задание: <br><br>Проверка деления нацело
+                
+                Напишите программу на Kotlin, которая проверяет, делится ли одно число на другое без остатка (например, проверка деления 10 на 2).<br>
+                
+                Надеюсь, эти задания будут более простыми и помогут в понимании основ программирования на Java и Kotlin!</p>
+
+                <div class="container">
+                    <h1>Тест: Java, Kotlin и Android Studio</h1>
+                    
+                    <div class="question" id="question1">
+                        <h2>1. Какая из этих языков является официальным языком разработки для Android?</h2>
+                        <div class="answers">
+                            <label><input type="radio" name="q1" value="a"> (a) Java</label><br>
+                            <label><input type="radio" name="q1" value="b"> (b) Kotlin</label><br>
+                            <label><input type="radio" name="q1" value="c"> (c) Python</label><br>
+                        </div>
+                    </div>
+                    
+                    <div class="question" id="question2">
+                        <h2>2. Какая IDE (интегрированная среда разработки) используется для создания приложений под Android?</h2>
+                        <div class="answers">
+                            <label><input type="radio" name="q2" value="a"> (a) Eclipse</label><br>
+                            <label><input type="radio" name="q2" value="b"> (b) NetBeans</label><br>
+                            <label><input type="radio" name="q2" value="c"> (c) Android Studio</label><br>
+                        </div>
+                    </div>
+                    
+                    <div class="question" id="question3">
+                        <h2>3. Какой язык программирования является совместимым с Java и используется для разработки приложений под Android?</h2>
+                        <div class="answers">
+                            <label><input type="radio" name="q3" value="a"> (a) Swift</label><br>
+                            <label><input type="radio" name="q3" value="b"> (b) Kotlin</label><br>
+                            <label><input type="radio" name="q3" value="c"> (c) C++</label><br>
+                        </div>
+                    </div>
+                
+                    <div class="question" id="question4">
+                        <h2>4. Какой из этих языков является статически типизированным?</h2>
+                        <div class="answers">
+                            <label><input type="radio" name="q4" value="a"> (a) Kotlin</label><br>
+                            <label><input type="radio" name="q4" value="b"> (b) JavaScript</label><br>
+                            <label><input type="radio" name="q4" value="c"> (c) Python</label><br>
+                        </div>
+                    </div>
+                    
+                    <div class="question" id="question5">
+                        <h2>5. Что такое AVD в Android Studio?</h2>
+                        <div class="answers">
+                            <label><input type="radio" name="q5" value="a"> (a) Android Virtual Device</label><br>
+                            <label><input type="radio" name="q5" value="b"> (b) Android Version Deployer</label><br>
+                            <label><input type="radio" name="q5" value="c"> (c) Android View Designer</label><br>
+                        </div>
+                    </div>
+                
+                    <button onclick="showResult()">Проверить</button>
+                    <div id="result"></div>
+                </div>
+                
+                <script>
+                function showResult() {
+                    var score = 0;
+                
+                    // Проверяем ответы на каждый вопрос
+                    var q1Answer = document.querySelector('input[name="q1"]:checked');
+                    if (q1Answer && q1Answer.value === "b") {
+                        score++;
+                    }
+                
+                    var q2Answer = document.querySelector('input[name="q2"]:checked');
+                    if (q2Answer && q2Answer.value === "c") {
+                        score++;
+                    }
+                
+                    var q3Answer = document.querySelector('input[name="q3"]:checked');
+                    if (q3Answer && q3Answer.value === "b") {
+                        score++;
+                    }
+                
+                    var q4Answer = document.querySelector('input[name="q4"]:checked');
+                    if (q4Answer && q4Answer.value === "a") {
+                        score++;
+                    }
+                
+                    var q5Answer = document.querySelector('input[name="q5"]:checked');
+                    if (q5Answer && q5Answer.value === "a") {
+                        score++;
+                    }
+                
+                    // Выводим результат
+                    var resultElement = document.getElementById('result');
+                    resultElement.textContent = 'Вы набрали ' + score + ' из 5 баллов.';
+                }
+                </script>
+                
+    </div>
+</div>
+
+</body>
+</html>

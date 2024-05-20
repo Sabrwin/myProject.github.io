@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial</title>
+</head>
+<body>
+   <style>
+    body{
+        background: url(img/fon1.jpg) center/cover;
+        
+        
+    }
+    code{
+        color:aliceblue;
+        font-size: 20px;
+    }
+    p{
+        font-size: 20px;
+    }
+    h1{
+        color:aliceblue;
+    }
+    p{
+        color:aliceblue;
+    }
+    .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question h2 {
+    margin-bottom: 10px;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+}
+
+.answers label {
+    margin-bottom: 10px;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+p span{
+            color:greenyellow;
+        }
+    
+   </style>
+    <h1>Лекция: Введение в python, PHP и web-Фреймворки</h1>
+
+    <p>Введение в PHP
+
+        PHP (Hypertext Preprocessor) - это широко используемый серверный язык программирования, который в основном применяется для создания динамических веб-страниц и веб-приложений. Он интегрируется с HTML и может быть встроен прямо в код HTML. PHP является одним из наиболее популярных языков веб-разработки и используется множеством крупных веб-сайтов, таких как Facebook, Wikipedia и WordPress.
+        1. Синтаксис
+PHP код обычно встраивается прямо в HTML документы, используя специальные открывающие и закрывающие теги:</p> <br><br>
+
+<p>Пример PHP-кода:</p> <br>
+<img src="img/php code.png" alt=""><br>
+<p>
+    2. Переменные
+Переменные в PHP начинаются с символа $ и могут содержать буквы, цифры и знак подчеркивания. Например: <br>
+<img src="img/PHP code 2.png" alt=""><br>
+
+3. Вывод
+Для вывода данных на экран используется функция echo или print: <br>
+<img src="img/php code 3.png" alt=""> <br>
+
+4. Операторы
+PHP поддерживает множество операторов, таких как арифметические, логические и сравнения:
+$x = 10;<br>
+$y = 5;<br>
+
+$sum = $x + $y;<br>
+$difference = $x - $y;<br>
+$product = $x * $y;<br>
+$division = $x / $y;<br>
+
+$is_greater = $x > $y;<br><br>
+
+5. Условные операторы
+PHP имеет условные операторы для принятия решений: <br>
+if ($x > $y) {<br>
+    echo "x больше, чем y";<br>
+} elseif ($x < $y) {<br>
+    echo "x меньше, чем y";<br>
+} else {<br>
+    echo "x равен y";<br>
+}<br><br>
+6. Циклы
+PHP поддерживает различные типы циклов, такие как for, while, do-while: <br>
+for ($i = 0; $i < 5; $i++) { <br>
+    echo $i;<br>
+}<br>
+
+$i = 0;<br>
+while ($i < 5) {<br>
+    echo $i;<br>
+    $i++;<br>
+}<br>
+
+$i = 0;<br>
+do {<br>
+    echo $i;<br>
+    $i++;<br>
+} while ($i < 5);<br><br>
+7. Функции
+Функции в PHP определяются с использованием ключевого слова function: <br>
+function greet($name) {<br>
+    echo "Привет, $name!";<br>
+} <br>
+
+greet("John"); <br><br>
+
+8. Работа с базами данных <br>
+PHP имеет встроенную поддержку для работы с большинством баз данных, таких как MySQL, PostgreSQL и другими. <br>
+
+Пример подключения к MySQL базе данных и выполнения запроса: <br>
+<?<br>
+    $servername = "localhost";<br>
+    $username = "username";<br>
+    $password = "password";<br>
+    $dbname = "myDB";<br>
+
+    // Создаем соединение<br>
+    $conn = new mysqli($servername, $username, $password, $dbname);<br>
+
+    // Проверяем соединение<br>
+    if ($conn->connect_error) {<br>
+        die("Ошибка подключения: " . $conn->connect_error);<br>
+    }<br>
+
+    $sql = "SELECT id, name, email FROM users";<br>
+    $result = $conn->query($sql);<br>
+
+    if ($result->num_rows > 0) {<br>
+        // Выводим данные каждой строки<br>
+        while($row = $result->fetch_assoc()) {<br>
+            echo "id: " . $row["id"]. " - Name: " . $row["name"]. " " . $row["email"]. "br";
+        }<br>
+    } else {<br>
+        echo "0 результатов";<br>
+    }<br>
+
+    // Закрываем соединение<br>
+    $conn->close();<br>
+?><br><br>
+Практическое задание по <span>PHP</span> <br>
+1 Задание: <br>
+Создайте переменные для имени и возраста, а затем выведите их на экран. <br>
+2 Задание: <br>
+Создайте переменные $num1 и $num2, присвойте им значения, а затем выведите <br> результат сложения, вычитания, умножения и деления. Затем сравните их и выведите результат сравнения. <br><br>
+
+Что такое Python? <br>
+
+Python - это интерпретируемый, объектно-ориентированный язык программирования, разработанный Гвидо ван Россумом в конце 1980-х годов. <br> Он имеет простой и чистый синтаксис, который делает его очень читаемым и легким для изучения, что особенно подходит для начинающих.
+
+Зачем изучать Python?
+
+Python популярен по нескольким причинам:
+
+Простота в изучении: Синтаксис Python напоминает английский язык, что делает его доступным для новичков.
+Мощный и гибкий: Python подходит для разработки различных приложений, от веб-сайтов до алгоритмов машинного обучения.
+Большое сообщество: Вокруг Python существует активное сообщество разработчиков, которые создают разнообразные библиотеки и инструменты.
+Широкое применение: Python используется во многих областях, включая веб-разработку, научные исследования, анализ данных, автоматизацию и многое другое.
+Основные особенности Python:
+
+Интерпретируемость: Python - это интерпретируемый язык, что означает, что код выполняется построчно, что облегчает тестирование и отладку.
+Динамическая типизация: Переменные в Python не требуют объявления типа данных, и их типы могут изменяться во время выполнения программы.
+Объектно-ориентированное программирование: Python поддерживает объектно-ориентированную парадигму, что позволяет создавать модульные и масштабируемые программы.
+Богатая стандартная библиотека: Python поставляется с обширной стандартной библиотекой, которая включает в себя модули для работы с различными типами данных, сетевыми протоколами, графикой и многое другое.
+Кроссплатформенность: Python работает на различных операционных системах, включая Windows, macOS и различные дистрибутивы Linux.
+Установка Python:
+
+Python можно легко установить на ваш компьютер. Просто посетите официальный сайт Python и загрузите последнюю версию для вашей операционной системы. Установщик Python также включает в себя интерпретатор Python и среду разработки IDLE (Integrated Development and Learning Environment), которая предоставляет удобный способ написания и запуска кода Python.
+
+Первая программа на Python:
+
+Давайте напишем нашу первую программу на Python - приветственное сообщение: <br><br>
+
+print("Привет, мир!") <br><br>
+Сохраните этот код в файле с расширением .py, например, hello.py, и запустите его с помощью команды python hello.py в терминале или командной строке. Вы должны увидеть на экране сообщение "Привет, мир!". <br><br>
+
+1. Переменные и типы данных: <br>
+
+В Python переменные объявляются простым присваиванием: <br>
+x = 5 <br><br>
+Python поддерживает различные типы данных: <br>
+
+Целые числа (int): x = 5 <br>
+Вещественные числа (float): y = 3.14<br>
+Строки (str): name = "John"<br>
+Списки (list): my_list = [1, 2, 3, 4, 5]<br>
+Кортежи (tuple): my_tuple = (1, 2, 3)<br>
+Словари (dict): my_dict = {'name': 'John', 'age': 30}<br><br>
+2. Операторы:<br>
+
+Python поддерживает различные арифметические операторы:<br><br>
+
++ сложение<br>
+- вычитание<br>
+* умножение<br>
+/ деление<br>
+% остаток от деления<br>
+** возведение в степень<br><br>
+
+x = 10<br>
+y = 3<br>
+print(x + y)  # 13<br>
+print(x - y)  # 7<br>
+print(x * y)  # 30<br>
+print(x / y)  # 3.3333333333333335<br>
+print(x % y)  # 1<br>
+print(x ** y) # 1000<br><br>
+3. Условные операторы: <br>
+
+if, elif, else используются для выполнения кода в зависимости от условия. <br>
+
+x = 10 <br>
+if x > 5: <br>
+    print("x больше 5")<br>
+elif x == 5:<br>
+    print("x равен 5")<br>
+else:<br>
+    print("x меньше 5")<br><br>
+
+    4. Циклы: <br>
+
+    for используется для перебора элементов в последовательности. <br>
+    my_list = [1, 2, 3, 4, 5] <br>
+for num in my_list:<br>
+    print(num)<br><br>
+    while выполняет блок кода, пока условие истинно:<br>
+    x = 0 <br>
+while x < 5:<br>
+    print(x)<br>
+    x += 1<br><br>
+    Практическое задание по <span>Python</span> <br>
+    1 задание - Напиши свою первую программу - Привет Мир! <br>
+    2 задание - Выведи числы от одного до 15 с помощью цикла <br>
+    3 задание - Напишите программу, которая запрашивает у пользователя два числа и выводит их сумму. <br><br>
+
+    Фреймворки Python:<br><br>
+
+Python имеет широкий спектр фреймворков для веб-разработки, каждый из которых имеет свои особенности и преимущества. Некоторые из наиболее популярных фреймворков Python включают:<br>
+
+Django: Django - это высокоуровневый фреймворк, который обеспечивает полный набор инструментов для быстрой разработки веб-приложений. Он предлагает мощный ORM (Object-Relational Mapping), систему маршрутизации URL, встроенную административную панель и многое другое.<br>
+
+Flask: Flask - это легкий и гибкий микрофреймворк, который позволяет разработчикам создавать веб-приложения любой сложности. Он предоставляет базовый набор инструментов для работы с HTTP-запросами, но при этом оставляет пространство для расширения и добавления дополнительных функций.<br>
+
+Pyramid: Pyramid - это фреймворк, который стремится быть простым в использовании и расширяемым. Он обеспечивает гибкий подход к построению веб-приложений и поддерживает различные стили разработки.<br><br>
+
+Фреймворки PHP:<br><br>
+
+PHP также имеет множество фреймворков для веб-разработки. Некоторые из наиболее популярных включают:
+
+Laravel: Laravel - это современный и популярный фреймворк PHP, который обеспечивает элегантный синтаксис и множество инструментов для разработки веб-приложений. Он предлагает маршрутизацию, ORM, систему шаблонов Blade и многое другое.<br>
+
+Symfony: Symfony - это модульный и гибкий фреймворк, который позволяет разрабатывать крупные и сложные веб-приложения. Он предлагает широкий набор компонентов и инструментов для работы с HTTP, формами, базами данных и другими аспектами приложений.<br>
+
+CodeIgniter: CodeIgniter - это легкий и быстрый фреймворк, который обеспечивает минимальный набор инструментов для быстрой разработки веб-приложений. Он хорошо подходит для создания простых и быстрых проектов.<br><br>
+
+API (Application Programming Interface):<br>
+
+API - это набор методов и инструментов, который позволяет программному обеспечению взаимодействовать друг с другом. Он определяет, какие запросы и ответы могут отправляться между программами.<br>
+
+Существует несколько типов API:<br><br>
+
+Web API: Веб-API позволяют веб-сервисам взаимодействовать с другими программами через интернет. Они обычно используют протоколы HTTP/HTTPS и форматы данных, такие как JSON или XML.<br>
+
+Библиотечные API: Библиотечные API предоставляют интерфейс для использования функций и методов библиотек или фреймворков.<br>
+
+Операционные системы API: ОС API предоставляют доступ к функциям и ресурсам операционной системы, таким как файловая система, сетевые соединения и т. д.<br><br>
+
+Примеры использования API включают:<br><br>
+
+Интеграция социальных сетей, таких как Facebook или Twitter.<br>
+Получение данных из сторонних сервисов, таких как погодные данные или финансовые информации.<br>
+Взаимодействие с базой данных или другими сервисами внутри компании.<br><br>
+Заключение:<br><br>
+
+В этой лекции мы рассмотрели основные фреймворки для веб-разработки на Python и PHP, а также узнали о понятии API и его применении. Фреймворки и API являются важными инструментами для создания современных веб-приложений и обеспечения их взаимодействия с другими программами.<br><br>
+
+<div class="container">
+    <div class="question" id="question1">
+        <h2>1. Что такое PHP?</h2>
+        <div class="answers">
+            <label><input type="radio" name="q1" value="a"> a) Программирование для HyperText Markup Language (HTML)</label>
+            <label><input type="radio" name="q1" value="b"> b) Серверный язык программирования для создания динамических веб-страниц</label>
+            <label><input type="radio" name="q1" value="c"> c) Формат обмена данными в интернете</label>
+            <label><input type="radio" name="q1" value="d"> d) Протокол передачи гипертекста</label>
+        </div>
+    </div>
+
+    <div class="question" id="question2">
+        <h2>2. Какой из перечисленных языков программирования относится к динамическим языкам?</h2>
+        <div class="answers">
+            <label><input type="radio" name="q2" value="a"> a) Java</label>
+            <label><input type="radio" name="q2" value="b"> b) C++</label>
+            <label><input type="radio" name="q2" value="c"> c) Python</label>
+            <label><input type="radio" name="q2" value="d"> d) C#</label>
+        </div>
+    </div>
+
+    <div class="question" id="question3">
+        <h2>3. Какой фреймворк является микрофреймворком для Python?</h2>
+        <div class="answers">
+            <label><input type="radio" name="q3" value="a"> a) Django</label>
+            <label><input type="radio" name="q3" value="b"> b) Flask</label>
+            <label><input type="radio" name="q3" value="c"> c) Pyramid</label>
+            <label><input type="radio" name="q3" value="d"> d) Symfony</label>
+        </div>
+    </div>
+
+    <div class="question" id="question4">
+        <h2>4. Какой из следующих фреймворков PHP является наиболее модульным и гибким?</h2>
+        <div class="answers">
+            <label><input type="radio" name="q4" value="a"> a) Laravel</label>
+            <label><input type="radio" name="q4" value="b"> b) CodeIgniter</label>
+            <label><input type="radio" name="q4" value="c"> c) Symfony</label>
+            <label><input type="radio" name="q4" value="d"> d) Yii</label>
+        </div>
+    </div>
+
+    <div class="question" id="question5">
+        <h2>5. Что такое модель OSI?</h2>
+        <div class="answers">
+            <label><input type="radio" name="q5" value="a"> a) Операционная система интернета</label>
+            <label><input type="radio" name="q5" value="b"> b) Основные стандарты интернета</label>
+            <label><input type="radio" name="q5" value="c"> c) Модель семи уровней, используемая для понимания работы компьютерных сетей</label>
+            <label><input type="radio" name="q5" value="d"> d) Структура веб-приложений</label>
+        </div>
+    </div>
+
+    <div class="question" id="question6">
+        <h2>6. Какой уровень модели OSI отвечает за маршрутизацию и коммутацию данных?</h2>
+        <div class="answers">
+            <label><input type="radio" name="q6" value="a"> a) Физический уровень</label>
+            <label><input type="radio" name="q6" value="b"> b) Канальный уровень</label>
+            <label><input type="radio" name="q6" value="c"> c) Сетевой уровень</label>
+            <label><input type="radio" name="q6" value="d"> d) Транспортный уровень</label>
+        </div>
+    </div>
+
+    <div class="question" id="question7">
+        <h2>7. Какой протокол относится к прикладному уровню модели OSI?</h2>
+        <div class="answers">
+            <label><input type="radio" name="q7" value="a"> a) HTTP</label>
+            <label><input type="radio" name="q7" value="b"> b) TCP</label>
+            <label><input type="radio" name="q7" value="c"> c) IP</label>
+            <label><input type="radio" name="q7" value="d"> d) Ethernet</label>
+        </div>
+    </div>
+
+    <div class="question" id="question8">
+        <h2>8. Какой из следующих HTTP методов используется для создания нового ресурса?</h2>
+        <div class="answers">
+            <label><input type="radio" name="q8" value="a"> a) GET</label>
+            <label><input type="radio" name="q8" value="b"> b) POST</label>
+            <label><input type="radio" name="q8" value="c"> c) PUT</label>
+            <label><input type="radio" name="q8" value="d"> d) DELETE</label>
+        </div>
+    </div>
+
+    <button onclick="showResult()">Проверить</button>
+    <div id="result"></div>
+</div>
+
+<script>
+function showResult() {
+    var score = 0;
+
+    // Проверяем ответы на каждый вопрос
+    var q1Answer = document.querySelector('input[name="q1"]:checked');
+    if (q1Answer && q1Answer.value === "b") {
+        score++;
+    }
+
+    var q2Answer = document.querySelector('input[name="q2"]:checked');
+    if (q2Answer && q2Answer.value === "c") {
+        score++;
+    }
+
+    var q3Answer = document.querySelector('input[name="q3"]:checked');
+    if (q3Answer && q3Answer.value === "b") {
+        score++;
+    }
+
+    var q4Answer = document.querySelector('input[name="q4"]:checked');
+    if (q4Answer && q4Answer.value === "a") {
+        score++;
+    }
+
+    var q5Answer = document.querySelector('input[name="q5"]:checked');
+    if (q5Answer && q5Answer.value === "c") {
+        score++;
+    }
+
+    var q6Answer = document.querySelector('input[name="q6"]:checked');
+    if (q6Answer && q6Answer.value === "c") {
+        score++;
+    }
+
+    var q7Answer = document.querySelector('input[name="q7"]:checked');
+    if (q7Answer && q7Answer.value === "a") {
+        score++;
+    }
+
+    var q8Answer = document.querySelector('input[name="q8"]:checked');
+    if (q8Answer && q8Answer.value === "b") {
+        score++;
+    }
+
+    // Выводим результат
+    var resultElement = document.getElementById('result');
+    resultElement.textContent = 'Вы набрали ' + score + ' из 8 баллов.';
+}
+</script>
+
+
+    
+
+
+
+
+
+
+
+</p>
+
+</body>
+</html> 

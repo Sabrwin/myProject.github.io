@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Лекция: Язык программирования Swift и Xcode</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+.question {
+    margin-bottom: 20px;
+}
+
+.answers {
+    margin-left: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Лекция: Язык программирования Swift и Xcode</h1>
+    
+    <div class="lecture">
+        <h2>Введение в Swift</h2>
+        <p>Swift - это современный язык программирования, разработанный компанией Apple для создания приложений под iOS, macOS, watchOS и tvOS. Он сочетает в себе мощь Objective-C с простотой Python, что делает его идеальным выбором для разработчиков.</p>
+        
+        <h2>Особенности Swift</h2>
+        <ul>
+            <li><strong>Безопасность типов:</strong> Swift предлагает механизмы безопасности типов, которые позволяют предотвратить ошибки во время компиляции.</li>
+            <li><strong>Синтаксис:</strong> Синтаксис Swift является чистым и выразительным, что упрощает чтение и написание кода.</li>
+            <li><strong>Высокая производительность:</strong> Swift обеспечивает высокую производительность и эффективное использование ресурсов устройства.</li>
+            <li><strong>Мощные функциональные возможности:</strong> Swift поддерживает функциональное программирование, что позволяет писать более компактный и выразительный код.</li>
+        </ul>
+        
+        <h2>Интегрированная среда разработки Xcode</h2>
+        <p>Xcode - это интегрированная среда разработки (IDE) от Apple, предназначенная для создания приложений под платформы Apple. Она включает в себя инструменты для написания кода, отладки, тестирования и развертывания приложений.</p>
+        
+        <p>В Xcode доступны множество функций, таких как визуальный редактор интерфейса, инструменты для работы с графическими ресурсами, анализаторы производительности и многие другие, что делает его основным выбором для разработчиков приложений под платформы Apple.</p>
+       <p> Swift Целочисленные типы данных (Integer Types): <br><br>
+
+        Int: 32-битное или 64-битное знаковое целое число. Размер Int зависит от архитектуры платформы. <br>
+        UInt: 32-битное или 64-битное беззнаковое целое число. Размер UInt также зависит от архитектуры платформы. <br>
+        Примеры <br><br>
+        let integerNumber: Int = 42 <br>
+        let unsignedIntegerNumber: UInt = 100 <br><br>
+        Числа с плавающей точкой (Floating-Point Types):<br><br>
+
+Double: 64-битное число двойной точности.<br>
+Float: 32-битное число одинарной точности.<br>
+Примеры:<br><br>
+
+
+let doubleNumber: Double = 3.14159<br>
+let floatNumber: Float = 3.14<br>
+Логический тип данных (Boolean Type):<br><br>
+
+Bool: Логический тип, который может быть либо true, либо false.<br>
+Пример:<br><br>
+
+
+let isTrue: Bool = true <br>
+Символьный тип данных (Character Type): <br><br>
+
+Character: Один символ Unicode.<br>
+Пример:<br><br>
+
+
+let char: Character = "A"<br>
+Строковый тип данных (String Type):<br><br>
+
+String: Последовательность символов.<br>
+Пример:<br><br>
+
+
+let string: String = "Hello, Swift!"<br>
+Опциональные типы данных (Optional Types):<br><br>
+
+Optional: Позволяет переменной хранить либо значение определенного типа, либо nil.<br>
+Пример:<br><br>
+
+var optionalNumber: Int? = nil<br>
+Кортежи (Tuples):<br>
+
+Коллекция, которая содержит фиксированное количество значений различных типов.
+Пример:<br><br>
+
+let coordinates: (Int, Int) = (3, 5)<br>
+Массивы (Arrays):<br><br>
+
+Упорядоченная коллекция элементов одного типа.<br>
+Пример:<br><br>
+
+let numbers: [Int] = [1, 2, 3, 4, 5]<br>
+Словари (Dictionaries):<br><br>
+
+Коллекция пар ключ-значение.<br>
+Пример:<br><br>
+
+let person: [String: Any] = ["name": "John", "age": 30, "isStudent": true]<br>
+Наборы (Sets):<br>
+
+Упорядоченная коллекция уникальных значений.<br>
+Пример:<br><br>
+
+let uniqueNumbers: Set Int> = [1, 2, 3, 4, 5]<br>
+Это основные типы данных в языке программирования Swift.<br>
+    </p>
+    <p>1. Задание: Приветствие <br><br>
+
+        Напишите программу, которая выводит на экран сообщение "Привет, мир!".<br><br>
+        
+        2. Задание: Расчет площади прямоугольника<br>
+        
+        Напишите программу, которая запрашивает у пользователя длину и ширину прямоугольника, а затем выводит его площадь.<br><br>
+        
+        3. Задание: Определение четности числа<br>
+        
+        Напишите программу, которая запрашивает у пользователя число и выводит сообщение "Число четное" или "Число нечетное", в зависимости от того, четное оно или нет.<br><br>
+        
+        4. Задание: Вычисление факториала<br>
+        
+        Напишите программу, которая запрашивает у пользователя целое число и вычисляет его факториал.<br><br>
+        
+        5. Задание: Проверка на простое число<br>
+        
+        Напишите программу, которая проверяет, является ли заданное пользователем число простым. Простое число - это число, которое делится только на себя и на 1.<br><br>
+    </p>
+
+    <div class="container">
+        <h1>Тест: Swift и Xcode</h1>
+        
+        <div class="question" id="question1">
+            <h2>1. Какой из следующих типов данных используется для хранения целых чисел в Swift?</h2>
+            <div class="answers">
+                <label><input type="radio" name="q1" value="a"> a) Int</label><br>
+                <label><input type="radio" name="q1" value="b"> b) String</label><br>
+                <label><input type="radio" name="q1" value="c"> c) Double</label><br>
+            </div>
+        </div>
+        
+        <div class="question" id="question2">
+            <h2>2. Что такое Xcode?</h2>
+            <div class="answers">
+                <label><input type="radio" name="q2" value="a"> a) Язык программирования</label><br>
+                <label><input type="radio" name="q2" value="b"> b) Интегрированная среда разработки (IDE)</label><br>
+                <label><input type="radio" name="q2" value="c"> c) Графическая библиотека</label><br>
+            </div>
+        </div>
+        
+        <div class="question" id="question3">
+            <h2>3. Как объявить константу в Swift?</h2>
+            <div class="answers">
+                <label><input type="radio" name="q3" value="a"> a) let</label><br>
+                <label><input type="radio" name="q3" value="b"> b) var</label><br>
+                <label><input type="radio" name="q3" value="c"> c) const</label><br>
+            </div>
+        </div>
+        
+        <div class="question" id="question4">
+            <h2>4. Какой оператор используется для раскрывания опциональных значений в Swift?</h2>
+            <div class="answers">
+                <label><input type="radio" name="q4" value="a"> a) ?</label><br>
+                <label><input type="radio" name="q4" value="b"> b) ??</label><br>
+                <label><input type="radio" name="q4" value="c"> c) !</label><br>
+            </div>
+        </div>
+        
+        <div class="question" id="question5">
+            <h2>5. Что такое playground в Xcode?</h2>
+            <div class="answers">
+                <label><input type="radio" name="q5" value="a"> a) Интерактивная среда для быстрого прототипирования и тестирования кода</label><br>
+                <label><input type="radio" name="q5" value="b"> b) Графический редактор интерфейса</label><br>
+                <label><input type="radio" name="q5" value="c"> c) Окно логирования</label><br>
+            </div>
+        </div>
+        
+        <div class="question" id="question6">
+            <h2>6. Что такое Optional в Swift?</h2>
+            <div class="answers">
+                <label><input type="radio" name="q6" value="a"> a) Тип данных для хранения целых чисел</label><br>
+                <label><input type="radio" name="q6" value="b"> b) Специальный тип данных для обработки ошибок</label><br>
+                <label><input type="radio" name="q6" value="c"> c) Тип данных, который может содержать значение или nil</label><br>
+            </div>
+        </div>
+        
+        <div class="question" id="question7">
+            <h2>7. Какой тип данных используется для хранения чисел с плавающей точкой двойной точности?</h2>
+            <div class="answers">
+                <label><input type="radio" name="q7" value="a"> a) Float</label><br>
+                <label><input type="radio" name="q7" value="b"> b) Double</label><br>
+                <label><input type="radio" name="q7" value="c"> c) Decimal</label><br>
+            </div>
+        </div>
+        
+        <div class="question" id="question8">
+            <h2>8. Какое ключевое слово используется для объявления функции в Swift?</h2>
+            <div class="answers">
+                <label><input type="radio" name="q8" value="a"> a) func</label><br>
+                <label><input type="radio" name="q8" value="b"> b) fun</label><br>
+                <label><input type="radio" name="q8" value="c"> c) function</label><br>
+            </div>
+        </div>
+        
+        <div class="question" id="question9">
+            <h2>9. Какой оператор используется для объединения строк в Swift?</h2>
+            <div class="answers">
+                <label><input type="radio" name="q9" value="a"> a) &</label><br>
+                <label><input type="radio" name="q9" value="b"> b) +</label><br>
+                <label><input type="radio" name="q9" value="c"> c) |</label><br>
+            </div>
+        </div>
+        
+        <div class="question" id="question10">
+            <h2>10. Как объявить массив чисел в Swift?</h2>
+            <div class="answers">
+                <label><input type="radio" name="q10" value="a"> a) let numbers: [Int]</label><br>
+                <label><input type="radio" name="q10" value="b"> b) let numbers: Array</label><br>
+                <label><input type="radio" name="q10" value="c"> c) let numbers: [Integer]</label><br>
+            </div>
+        </div>
+    
+        <button onclick="showResult()">Проверить</button>
+        <div id="result"></div>
+    </div>
+    
+    <script>
+    function showResult() {
+        var score = 0;
+    
+        // Проверяем ответы на каждый вопрос
+        var q1Answer = document.querySelector('input[name="q1"]:checked');
+        if (q1Answer && q1Answer.value === "a") {
+            score++;
+        }
+    
+        var q2Answer = document.querySelector('input[name="q2"]:checked');
+        if (q2Answer && q2Answer.value === "b") {
+            score++;
+        }
+    
+        var q3Answer = document.querySelector('input[name="q3"]:checked');
+        if (q3Answer && q3Answer.value === "a") {
+            score++;
+        }
+    
+        var q4Answer = document.querySelector('input[name="q4"]:checked');
+        if (q4Answer && q4Answer.value === "c") {
+            score++;
+        }
+    
+        var q5Answer = document.querySelector('input[name="q5"]:checked');
+        if (q5Answer && q5Answer.value === "a") {
+            score++;
+        }
+    
+        var q6Answer = document.querySelector('input[name="q6"]:checked');
+        if (q6Answer && q6Answer.value === "c") {
+            score++;
+        }
+    
+        var q7Answer = document.querySelector('input[name="q7"]:checked');
+        if (q7Answer && q7Answer.value === "b") {
+            score++;
+        }
+    
+        var q8Answer = document.querySelector('input[name="q8"]:checked');
+        if (q8Answer && q8Answer.value === "a") {
+            score++;
+        }
+    
+        var q9Answer = document.querySelector('input[name="q9"]:checked');
+        if (q9Answer && q9Answer.value === "b") {
+            score++;
+        }
+    
+        var q10Answer = document.querySelector('input[name="q10"]:checked');
+        if (q10Answer && q10Answer.value === "a") {
+            score++;
+        }
+    
+        // Выводим результат
+        var resultElement = document.getElementById('result');
+        resultElement.textContent = 'Вы набрали ' + score + ' из 10 баллов.';
+    }
+    </script>
+    </div>
+
+</div>
+
+</body>
+</html>

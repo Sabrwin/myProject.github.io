@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лекция: Основы верстки HTML, JavaScript, CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .section-title {
+            margin-top: 30px;
+        }
+        .code-example {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .code-example code {
+            display: block;
+            white-space: pre-wrap;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        .answers {
+            margin-bottom: 10px;
+        }
+        .answer {
+            margin-bottom: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Основы верстки HTML, JavaScript, CSS</h1>
+
+        <h2>Введение</h2>
+        <p>В данной лекции мы рассмотрим основные аспекты верстки веб-страниц с использованием HTML, JavaScript и CSS.
+            Что включает в себя верстка сайта
+Основная задача верстальщика – переместить прототип в код, который будет в точности отображать проделанную работу дизайнера. Верстку можно сравнить с издательской деятельностью – книги, журналы и газеты содержат структурированную информацию, в них текст и графические материалы упорядочены таким образом, чтобы максимально облегчить читателю процесс потребления информации и заинтересовать его.
+
+Выделяется два типа разработчиков сайтов:
+
+Backend– занимается разработкой внутренней части сайта, программирует основной функционал;
+Frontend – занимается внешней частью сайта, настраивает отображение всех элементов, добавляет к ним анимацию и так далее.
+Верстка – это про Frontend, в основу которого входит язык разметки HTML, базис любого сайта.
+
+HTML позволяет показывать страницы и контент, размещенный на них, в заданном порядке. Работа с языком разметки заключается в описании тегов.
+        </p>
+
+        <h2>Часть 1: HTML</h2>
+        <p>HTML (HyperText Markup Language) является основным языком разметки веб-страниц. Он используется для структурирования и представления содержимого в интернете.</p>
+        <p>Пример базовой HTML-структуры документа:</p>
+        <div class="code-example">
+            <code>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html lang="ru"&gt;<br>
+                &lt;head&gt;<br>
+                &nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+                &nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                &nbsp;&nbsp;&lt;title&gt;Моя первая веб-страница&lt;/title&gt;<br>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                &nbsp;&nbsp;&lt;h1&gt;Привет, мир!&lt;/h1&gt;<br>
+                &nbsp;&nbsp;&lt;p&gt;Это моя первая веб-страница.&lt;/p&gt;<br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;
+            </code>
+        </div>
+
+        <h2>Часть 2: JavaScript</h2>
+        <p>JavaScript (JS) - это язык программирования, который используется для добавления интерактивности на веб-страницы.
+            JavaScript – это мультипарадигменный язык программирования, который обычно применяется в качестве встраиваемого инструмента для программного доступа к различным объектам приложений. С точки зрения веб-разработки, без знаний этой технологии невозможно заниматься созданием современных интерактивных сайтов. Язык JS – это то, что «оживляет» разметку страниц (HTML) и пользовательский функционал (CMS) сайтов.
+        </p>
+        <p>Пример использования JavaScript для вывода сообщения:</p>
+        <div class="code-example">
+            <code>
+                &lt;script&gt;<br>
+                &nbsp;&nbsp;alert("Привет, мир!");<br>
+                &lt;/script&gt;
+            </code>
+        </div>
+
+        <h2>Часть 3: CSS</h2>
+        <p>CSS (Cascading Style Sheets) используется для стилизации веб-страниц и задания внешнего вида элементов HTML.
+            CSS (Cascading Style Sheets) - это язык таблиц стилей, используемый для описания внешнего вида документа, написанного с использованием языка разметки, такого как HTML. Основная задача CSS - управление оформлением веб-страницы, включая ее цвета, шрифты, расположение элементов и другие аспекты представления.
+
+Применение CSS позволяет разделять структуру содержимого веб-страницы от ее визуального представления, что упрощает сопровождение и модификацию сайта. Основные принципы CSS включают каскадность, наследование и специфичность правил.
+        </p>
+        <p>Пример использования CSS для изменения цвета фона:</p>
+        <div class="code-example">
+            <code>
+                &lt;style&gt;<br>
+                &nbsp;&nbsp;body {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;background-color: #f4f4f4;<br>
+                &nbsp;&nbsp;}<br>
+                &lt;/style&gt;
+            </code>
+        </div>
+
+        <h2>Часть 4: Excel и таблицы Google</h2>
+        <p>Excel и таблицы Google - MS Excel – это приложение Windows, предназначенное для обработки 
+            электронных таблиц. Электронная таблица – это работающее диалоговое 
+            приложение, хранящее и обрабатывающее данные в прямоугольных 
+            таблицах.
+            Документом MS Excel является файл с произвольным именем и 
+            расширением .XLS (XLSX для 2007).
+            В терминах Excel такой файл называют рабочей книгой. Каждая 
+            страница рабочей книги называется рабочим листом. Каждый рабочий лист 
+            разбит на столбцы и строки, отделенных друг от друга разделительной 
+            сеткой.
+            Электронная таблица состоит из 256 столбцов и более 65 тысяч строк. 
+            Строки нумерованы целыми числами начиная с 1, а столбцы обозначены 
+            буквами латинского алфавита (A, B, C … AA, AB, AC … BA, BB …).
+            На пересечении строки и столбца находится основной структурный 
+            элемент таблицы – ячейка. Обозначение ячейки определяется из номера 
+            столбца и номера строки, на пересечении которой она находится (A7, B229, 
+            AF45 …).
+            Функции в Excel
+            Функция, в общем случае – это переменная величина, значение которой 
+            зависит от значения других величин – аргументов. Функция имеет имя и, как 
+            правило, аргументы, которые записываются в круглых скобках следом за 
+            именем функции, даже если у нее нет аргументов. Если аргументов 
+            несколько, они отделяются друг от друга «;». В качестве аргументов могут 
+            использоваться адреса ячеек, числа, арифметические выражения, другие 
+            функции. Например, в ячейку G6 введена формула с функцией 
+            =СТЕПЕНЬ(A4;3), то результатом этой ячейки будет значение ячейки A4, 
+            возведенной в степень 3.
+            В программе Excel можно использовать свыше 400 функций, которые 
+            разделены на категории:
+            <ul>
+                <li>Финансовые</li>
+                <li>Дата и время</li>
+                <li>Математические</li>
+                <li>Статистические</li>
+                <li>Текстовые</li>
+                <li>Логические</li>
+                <li>Инженерные</li>
+            </ul>
+            </p>
+
+        <h3>Пример использования Excel</h3>
+        <p>Excel позволяет создавать таблицы, формулы и диаграммы:</p>
+        <div class="code-example">
+            <code>
+                =SUM(A1:A10) // сумма значений в диапазоне A1:A10
+            </code>
+        </div>
+
+        <h3>Пример использования таблиц Google</h3>
+        <p>Таблицы Google предоставляют средства для совместной работы и анализа данных в реальном времени:</p>
+        <div class="code-example">
+            <code>
+                =QUERY(A1:B10, "select A, sum(B) where A != '' group by A")
+            </code>
+        </div>
+        <h5>Практическое задание HTML</h5>
+        <p>1 задание - Создай Html страницу</p>
+        <p>2 задание - добавь туда таблицу используя тег form</p>
+        <p>3 задание - Добавь ссылки и кнопки используя тег "a" и тег "button"</p><br><br>
+        <h5>Практическое задание CSS</h5>
+        <p>1 задание - Создай файл CSS и подключии его к Html странице</p>
+        <p>2 задание - поменяй цвет текста используя настройку - color</p>
+        <p>3 задание - Поменяй шрифт текста через настройку - font-family:</p><br><br>
+        <h5>Практическое задание JavaScript</h5>
+        <p>1 задание - Создай файл JS и подключии его к Html странице через тег script</p>
+        <p>2 задание - Выведи на консол слово Hello world</p>
+        <p>3 задание - Выведи на экран всплывающее сообщение - alert('Это всплывающее сообщение!');</p><br><br>
+        <h5>Практическое задание MS excel и Google Таблицы</h5>
+        <p>1 задание - Создание расчетной таблицы</p> 
+        <p>2 задание - Создание расчетной таблицы доходов и расходов:</p> 
+        <p>3 задание - Создайте новую таблицу Excel или Google Таблицу.</p>
+        
+
+    </div>
+    <div class="container">
+        <h1>Тест по HTML, JavaScript, CSS и MS Excel</h1>
+
+        <form id="quizForm" onsubmit="return false;">
+            <div class="question">
+                <p><strong>1. Какой тег используется для создания заголовка первого уровня в HTML?</strong></p>
+                <div class="answers">
+                    <div class="answer">
+                        <input type="radio" name="q1" id="q1_a" value="a">
+                        <label for="q1_a">A) &lt;h1&gt;</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" name="q1" id="q1_b" value="b">
+                        <label for="q1_b">B) &lt;header&gt;</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" name="q1" id="q1_c" value="c">
+                        <label for="q1_c">C) &lt;title&gt;</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p><strong>2. Какие из перечисленных тегов являются блочными?</strong></p>
+                <div class="answers">
+                    <div class="answer">
+                        <input type="radio" name="q2" id="q2_a" value="a">
+                        <label for="q2_a">A) &lt;span&gt;, &lt;a&gt;, &lt;strong&gt;</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" name="q2" id="q2_b" value="b">
+                        <label for="q2_b">B) &lt;div&gt;, &lt;p&gt;, &lt;ul&gt;</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" name="q2" id="q2_c" value="c">
+                        <label for="q2_c">C) &lt;input&gt;, &lt;button&gt;, &lt;br&gt;</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p><strong>3. Какой атрибут используется для задания стиля элемента прямо в теге?</strong></p>
+                <div class="answers">
+                    <div class="answer">
+                        <input type="radio" name="q3" id="q3_a" value="a">
+                        <label for="q3_a">A) class</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" name="q3" id="q3_b" value="b">
+                        <label for="q3_b">B) id</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" name="q3" id="q3_c" value="c">
+                        <label for="q3_c">C) style</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p><strong>4. Какой тег используется для создания ссылки в HTML?</strong></p>
+                <div class="answers">
+                    <div class="answer">
+                        <input type="radio" name="q4" id="q4_a" value="a">
+                        <label for="q4_a">A) &lt;a&gt;</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" name="q4" id="q4_b" value="b">
+                        <label for="q4_b">B) &lt;link&gt;</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" name="q4" id="q4_c" value="c">
+                        <label for="q4_c">C) &lt;url&gt;</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p><strong>5. Как вставить изображение в HTML документ?</strong></p>
+                <div class="answers">
+                    <div class="answer">
+                        <input type="radio" name="q5" id="q5_a" value="a">
+                        <label for="q5_a">A) &lt;img src="image.jpg" alt="Описание изображения"&gt;</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" name="q5" id="q5_b" value="b">
+                        <label for="q5_b">B) &lt;picture&gt;&lt;source srcset="image.jpg" type="image/jpeg"&gt;&lt;/picture&gt;</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" name="q5" id="q5_c" value="c">
+                        <label for="q5_c">C) &lt;image src="image.jpg" alt="Описание изображения"&gt;</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p><strong>6. Как объявить переменную в JavaScript?</strong></p>
+                <div class="answers">
+                    <div class="answer">
+                        <input type="radio" name="q6" id="q6_a" value="a">
+                        <label for="q6_a">A) var myVar;</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" name="q6" id="q6_b" value="b">
+                        <label for="q6_b">B) variable myVar;</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" name="q6" id="q6_c" value="c">
+                        <label for="q6_c">C) let myVar;</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p><strong>7. Как добавить элемент в конец массива в JavaScript?</strong></p>
+                <div class="answers">
+                    <div class="answer">
+                        <input type="radio" name="q7" id="q7_a" value="a">
+                        <label for="q7_a">A) array.add(item);</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" name="q7" id="q7_b" value="b">
+                        <label for="q7_b">B) array.push(item);</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" name="q7" id="q7_c" value="c">
+                        <label for="q7_c">C) array.insert(item);</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p><strong>8. Какой метод используется для вывода сообщения в консоль в JavaScript?</strong></p>
+                <div class="answers">
+                    <div class="answer">
+                        <input type="radio" name="q8" id="q8_a" value="a">
+                        <label for="q8_a">A) console.print()</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" name="q8" id="q8_b" value="b">
+                        <label for="q8_b">B) console.write()</label>
+</div>
+<div class="answer">
+    <input type="radio" name="q8" id="q8_c" value="c">
+    <label for="q8_c">C) console.log()</label>
+</div>
+</div>
+</div>
+
+<div class="question">
+<p><strong>9. Как добавить обработчик события на клик кнопки в JavaScript?</strong></p>
+<div class="answers">
+<div class="answer">
+    <input type="radio" name="q9" id="q9_a" value="a">
+    <label for="q9_a">A) button.onclick = function() {...}</label>
+</div>
+<div class="answer">
+    <input type="radio" name="q9" id="q9_b" value="b">
+    <label for="q9_b">B) button.addClickEvent(function() {...})</label>
+</div>
+<div class="answer">
+    <input type="radio" name="q9" id="q9_c" value="c">
+    <label for="q9_c">C) button.addEventListener('click', function() {...})</label>
+</div>
+</div>
+</div>
+
+<div class="question">
+<p><strong>10. Что такое условный оператор в JavaScript?</strong></p>
+<div class="answers">
+<div class="answer">
+    <input type="radio" name="q10" id="q10_a" value="a">
+    <label for="q10_a">A) if-else</label>
+</div>
+<div class="answer">
+    <input type="radio" name="q10" id="q10_b" value="b">
+    <label for="q10_b">B) switch-case</label>
+</div>
+<div class="answer">
+    <input type="radio" name="q10" id="q10_c" value="c">
+    <label for="q10_c">C) for-in</label>
+</div>
+</div>
+</div>
+
+<button type="submit" onclick="submitQuiz()">Проверить ответы</button>
+</form>
+
+<div id="results"></div>
+</div>
+
+<script>
+function submitQuiz() {
+const quizForm = document.getElementById('quizForm');
+let score = 0;
+
+// Проверяем ответы
+const answers = {
+q1: 'a',
+q2: 'b',
+q3: 'c',
+q4: 'a',
+q5: 'a',
+q6: 'a',
+q7: 'b',
+q8: 'c',
+q9: 'c',
+q10: 'a'
+};
+
+// Подсчитываем количество правильных ответов
+for (let question in answers) {
+const answer = quizForm[question];
+if (answer.value === answers[question]) {
+score++;
+}
+}
+
+// Выводим результаты
+const results = document.getElementById('results');
+results.innerHTML = `<h3>Результаты теста:</h3>
+             <p>Вы ответили правильно на ${score} из 10 вопросов.</p>`;
+}
+</script>
+</body>
+</html>
